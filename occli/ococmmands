@@ -1,0 +1,6 @@
+oc new-project
+oc new-app
+oc expose
+oc adm
+oc start-build
+oc login
