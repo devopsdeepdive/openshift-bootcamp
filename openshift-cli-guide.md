@@ -18,5 +18,5 @@ https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/auth?
 **Install OpenShift CLI on Linux**:
 
 Download the OpenShift CLI from:
-"https://console.redhat.com/openshift/downloads?utm_source=chatgpt.com"
+```https://console.redhat.com/openshift/downloads?utm_source=chatgpt.com```
 
