@@ -71,4 +71,15 @@ Add:
 C:\openshift
 Click OK → OK → OK
 
+Open PowerShell and verify:
+```
+oc version
+```
+Login from Windows:
+```
+oc login https://api.sno2.openshifttraining.online:6443 -u kubeadmin -p "YOUR_PASSWORD"
+
+oc whoami
+```
+
 
