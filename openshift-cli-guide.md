@@ -30,4 +30,10 @@ tar -xvzf openshift-client-linux.tar.gz
 sudo mv oc kubectl /usr/local/bin/
 oc version
 ```
-
+**Login from Linux**
+Use your SNO credentials:
+```
+oc login https://api.sno2.openshifttraining.online:6443 \
+  -u kubeadmin \
+  -p 'YOUR_PASSWORD'
+```
