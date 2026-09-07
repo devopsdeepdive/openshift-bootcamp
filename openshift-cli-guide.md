@@ -49,7 +49,7 @@ oc get nodes
 **Install OpenShift CLI on Windows**:
 <img width="995" height="160" alt="image" src="https://github.com/user-attachments/assets/63912ab2-2b5f-4c3f-9283-69b87793a12e" />
 
-Extract the ZIP.
+"Extract the ZIP.
 You'll have:
 oc.exe
 kubectl.exe
@@ -57,6 +57,6 @@ For example:
 C:\openshift\oc.exe
 C:\openshift\kubectl.exe
 
-Add C:\openshift to your Windows PATH.
+Add C:\openshift to your Windows PATH."
 
 
