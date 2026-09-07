@@ -24,6 +24,7 @@ https://console.redhat.com/openshift/downloads?utm_source=chatgpt.com
 Filename : OpenShift command-line interface (oc)
 Download Link: https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-client-linux.tar.gz
 
-``` wget https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-client-linux.tar.gz 
+```
+wget https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-client-linux.tar.gz 
 ```
 
