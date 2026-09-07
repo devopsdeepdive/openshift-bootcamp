@@ -25,6 +25,9 @@ Filename : OpenShift command-line interface (oc)
 Download Link: https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-client-linux.tar.gz
 
 ```
-wget https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-client-linux.tar.gz 
+wget https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/stable/openshift-client-linux.tar.gz
+tar -xvzf openshift-client-linux.tar.gz
+sudo mv oc kubectl /usr/local/bin/
+oc version
 ```
 
