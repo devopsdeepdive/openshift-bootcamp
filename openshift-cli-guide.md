@@ -58,5 +58,17 @@ C:\openshift\oc.exe
 C:\openshift\kubectl.exe
 
 Add C:\openshift to your Windows PATH."
+Windows GUI (recommended)
+Press Windows + S
+Search for:
+environment variables
+Click Edit the system environment variables
+Click Environment Variables...
+Under User variables for <your-user>, select Path
+Click Edit
+Click New
+Add:
+C:\openshift
+Click OK → OK → OK
 
 
