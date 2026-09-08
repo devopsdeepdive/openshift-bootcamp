@@ -15,7 +15,7 @@ Checking cluster and OpenShift version
 **Note**: Please create Redhat Account 
 https://sso.redhat.com/auth/realms/redhat-external/protocol/openid-connect/auth?client_id=rhcom&redirect_uri=https%3A%2F%2Fwww.redhat.com%2Fen%2Fdashboard&response_type=code&scope=openid+profile_level.rh_events+id.email+id.idp+id.job.title+id.job.department+id.name+id.organization+id.sub+id.username+roles+profile+api.graphql+api.console+api.ask_red_hat&state=faa2de9090dc4426b73bcf79ab67ffa8&code_challenge=-ZQpOhwI_6pHg7N4gKSqPuuCBUC79y2LX8-QTbwcUD0&code_challenge_method=S256
 
-#**Install OpenShift CLI on Linux**:
+### **Install OpenShift CLI on Linux**:
 
 Download the OpenShift CLI from:
 ```
@@ -47,7 +47,7 @@ oc get nodes
 ```
 
 
-#**Install OpenShift CLI on Windows**:
+### **Install OpenShift CLI on Windows**:
 <img width="995" height="160" alt="image" src="https://github.com/user-attachments/assets/63912ab2-2b5f-4c3f-9283-69b87793a12e" />
 
 Extract the ZIP.
