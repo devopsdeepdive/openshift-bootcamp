@@ -74,3 +74,24 @@ gcloud compute instances start sno2-fdr7n-master-0 \
   --zone=asia-south1-b \
   --project=openshift-sno-lab
 ```
+
+Then wait approximately 10 minutes before checking OpenShift, as Red Hat recommends for a cluster restart
+
+Check node
+```
+export KUBECONFIG=~/openshift-sno2/auth/kubeconfig
+oc get nodes
+```
+### Check Operators
+```
+oc get clusteroperators
+```
+Wait until the Operators are healthy.
+
+### Uncordon
+
+Once the cluster is healthy:
+
+```
+oc adm uncordon $NODE
+```
