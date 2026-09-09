@@ -35,3 +35,36 @@ Red Hat specifically recommends taking an etcd backup before
 shutdown because the backup can be used for recovery if the
 cluster does not restart correctly.
 
+### Before stopping
+1. Set kubeconfig
+```
+export KUBECONFIG=~/openshift-sno2/auth/kubeconfig
+```
+Stop the SNO
+
+Because this is SNO, first cordon the node:
+
+NODE=$(oc get nodes -o jsonpath='{.items[0].metadata.name}')
+oc adm cordon $NODE
+
+### Then drain it:
+
+oc adm drain $NODE \
+  --ignore-daemonsets \
+  --delete-emptydir-data \
+  --force
+
+###Now stop the GCP VM:
+
+gcloud compute instances stop sno2-fdr7n-master-0 \
+  --zone=asia-south1-b \
+  --project=openshift-sno-lab
+
+ ### Start the SNO
+
+When you need the training environment again:
+
+gcloud compute instances start sno2-fdr7n-master-0 \
+  --zone=asia-south1-b \
+  --project=openshift-sno-lab
+
