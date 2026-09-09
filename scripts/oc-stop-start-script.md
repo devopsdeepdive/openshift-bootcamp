@@ -40,7 +40,7 @@ cluster does not restart correctly.
 ```
 export KUBECONFIG=~/openshift-sno2/auth/kubeconfig
 ```
-###Stop the SNO
+### Stop the SNO
 
 Because this is SNO, first cordon the node:
 
@@ -57,7 +57,7 @@ oc adm drain $NODE \
   --force
 ```
 
-###Now stop the GCP VM:
+### Now stop the GCP VM:
 
 ```
 gcloud compute instances stop sno2-fdr7n-master-0 \
