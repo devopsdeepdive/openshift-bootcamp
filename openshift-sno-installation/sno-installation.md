@@ -28,3 +28,24 @@ Step 1 — Install Google Cloud CLI
 1. Download the official installer
 
 Use Google's official download page:
+https://docs.cloud.google.com/sdk/docs/install-sdk?utm_source=chatgpt.com
+
+2. Run the installer
+
+When the installer opens, keep the normal/default options.
+
+You can select:
+
+☑ Install Bundled Python
+☑ Add gcloud CLI to PATH
+☑ Create Start Menu shortcut
+
+The bundled Python option is useful because you don't need to separately install Python just for gcloud
+
+Step 2 — Verify gcloud
+
+After installation, close any existing CMD/PowerShell window and open a new PowerShell.
+
+Run:
+
+gcloud --version
