@@ -106,3 +106,27 @@ Verify:
 **gcloud config get-value project
 **
 It should return your project ID.
+
+use the GCP region asia-south1.
+Configure it now
+
+In PowerShell:
+
+**gcloud config set compute/region asia-south1**
+Then:
+
+**gcloud config set compute/zone asia-south1-a
+**
+Verify:
+
+**gcloud config list**
+###Step 3 — Enable required GCP APIs
+
+For the OpenShift installation, we'll need several GCP services. Let's enable them now:
+**gcloud services enable `
+compute.googleapis.com `
+iam.googleapis.com `
+cloudresourcemanager.googleapis.com `
+dns.googleapis.com `
+servicenetworking.googleapis.com `
+storage.googleapis.com**
