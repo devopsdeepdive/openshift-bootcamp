@@ -49,3 +49,60 @@ After installation, close any existing CMD/PowerShell window and open a new Powe
 Run:
 
 gcloud --version
+
+Step 3 — Login to Google Cloud
+
+Run:
+
+gcloud auth login
+
+A browser should open.
+
+Sign in with the Google account that owns/has access to your GCP project.
+
+After successful login:
+
+gcloud auth list
+
+You should see something like:
+
+Credentialed Accounts
+
+ACTIVE  ACCOUNT
+*       your-account@gmail.com
+
+  Step 4 — Initialize gcloud
+
+Now run:
+
+gcloud init
+
+Google's gcloud init configures your active account and default project.
+
+You'll be asked something like:
+
+Pick configuration to use:
+ [1] Re-initialize this configuration
+ [2] Create a new configuration
+
+For a completely fresh setup, I recommend creating a separate configuration:
+
+2
+
+Give it a name such as:
+
+**openshift-sno**
+
+Then authenticate/select your Google account.
+
+Step 5 — Select your GCP project
+
+If you already created the project, run:
+
+**gcloud projects list
+**
+Verify:
+
+**gcloud config get-value project
+**
+It should return your project ID.
