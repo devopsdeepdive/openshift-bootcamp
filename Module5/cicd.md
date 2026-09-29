@@ -15,3 +15,5 @@ Labs
 GitHub → Build → Deploy
 •
 Automatic Pipeline Execution
+
+Install Red Hat OpenShift Pipelines from Operators
